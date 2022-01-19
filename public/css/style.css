@@ -54,6 +54,18 @@ body {
   float: right;
 }
 
+.toggle {
+  color: #1c1c1c;
+  background: none;
+  border: none;
+  font-size: 40px;
+  padding: 0 20px;
+  line-height: auto;
+  display: none;
+  float: right;
+  cursor: pointer;
+}
+
 /* IMAGEN */
 
 .foto {
@@ -115,16 +127,36 @@ body {
 	}
 }
 
-@media screen and (max-width: 633px) {
+@media screen and (max-width: 768px) {
   .header a {
     display: block;
     text-align: left;
   }
   .header-right {
     float: none;
+    position: fixed;
+    background: #00FF7F;
+    left: 0;
+    top: 66px;
+    width: 100%;
+    left: 100%;
+    transition: left 0.3s;
+  }
+  .visible {
+    left: 0;
   }
   .header a#menu {
     width: 100%;
     text-align: center;
+  }
+  .toggle {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .header a.logo {
+    font-size: 20px;
+    font-weight: bold;
   }
 }
