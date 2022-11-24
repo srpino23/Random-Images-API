@@ -8,7 +8,7 @@ xhttp.onreadystatechange = function() {
         document.getElementById("img-container").appendChild(img);
     }
 };
-xhttp.open("GET", ("http://api.pinofans.ml" + ":3000" + "/normal"), true);
+xhttp.open("GET", ("http://api.pinofans.ml" + "/normal"), true);
 xhttp.send();
 
 var xhttps = new XMLHttpRequest();
@@ -19,7 +19,7 @@ xhttps.onreadystatechange = function() {
         document.title = respuesta.titulos;
     }
 };
-xhttps.open("GET", ("http://api.pinofans.ml" + ":3000" + "/titulos"), true);
+xhttps.open("GET", ("http://api.pinofans.ml" + "/titulos"), true);
 xhttps.send();
 
 function refreshPage() {

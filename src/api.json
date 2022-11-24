@@ -1,5 +1,5 @@
 [
-    { "nombre": "Normal Images", "url": "http://api.pinofans.ml:3000/normal" },
-    { "nombre": "Ecchi Images", "url": "http://api.pinofans.ml:3000/ecchi" },
-    { "nombre": "Titles", "url": "http://api.pinofans.ml:3000/titulos" }
+    { "nombre": "Normal Images", "url": "http://api.pinofans.ml/normal" },
+    { "nombre": "Ecchi Images", "url": "http://api.pinofans.ml/ecchi" },
+    { "nombre": "Titles", "url": "http://api.pinofans.ml/titulos" }
 ]

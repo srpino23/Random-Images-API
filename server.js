@@ -16,6 +16,12 @@ app.get("/api", (req, res) => {
     res.json(api);
 });
 
+app.get("/", (req, res) => {
+    var item = normal[Math.floor(Math.random() * normal.length)];
+
+    res.json(item);
+});
+
 app.get("/ecchi", (req, res) => {
     var item = ecchi[Math.floor(Math.random() * ecchi.length)];
 
